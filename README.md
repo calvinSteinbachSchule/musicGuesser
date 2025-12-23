@@ -9,29 +9,25 @@ Dies ist der Entwicklungsplan für unser Java-basiertes Musik-Ratespiel. Das Pro
 
 Aktuelle Phase: Initialisierung & Setup
 
-Geplantes Release: v1.0
-
 📅 Meilenstein 1: Projekt-Initialisierung & Setup
 
 Ziel: Eine stabile Entwicklungsumgebung ohne Build-Tools (Maven/Gradle) schaffen.
 
-[ ] Repository Setup
+[X] Repository Setup
 
-[ ] .gitignore für IntelliJ und Java erstellen.
+[X] .gitignore für IntelliJ und Java erstellen.
 
-[ ] Initialer Commit und Push auf GitHub.
+[X] Initialer Commit und Push auf GitHub.
 
-[ ] Abhängigkeiten (Dependencies) einrichten
+[X] Abhängigkeiten (Dependencies) einrichten
 
-[ ] JavaFX SDK herunterladen und lokal einbinden.
+[X] JavaFX SDK herunterladen und lokal einbinden.
 
-[ ] Jackson Core/Annotations/Databind JARs herunterladen und einbinden.
+[X] Jackson Core/Annotations/Databind JARs herunterladen und einbinden.
 
-[ ] Run-Configuration (VM Options) für JavaFX Module in IntelliJ konfigurieren.
+[X] Run-Configuration (VM Options) für JavaFX Module in IntelliJ konfigurieren.
 
-[ ] Proof of Concept (PoC)
-
-[ ] Einfaches "Hello World" JavaFX-Fenster starten, um Setup zu bestätigen.
+[X] Einfaches "Hello World" JavaFX-Fenster starten, um Setup zu bestätigen.
 
 ⚙️ Meilenstein 2: Backend & Datenlogik (Model)
 
