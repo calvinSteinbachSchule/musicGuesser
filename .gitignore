@@ -1,0 +1,7 @@
+# Ignoriere den kompilieren Output
+out/
+
+# Ignoriere persönliche IntelliJ-Einstellungen
+.idea/workspace.xml
+.idea/usage.statistics.xml
+.DS_Store
