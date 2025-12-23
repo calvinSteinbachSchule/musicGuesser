@@ -1,7 +1,10 @@
-# Ignoriere den kompilieren Output
+# Ignoriere plattformspezifische dateien und kompillierte dateien
+*.so
+*.dll
+*.dylib
 out/
 
-# Ignoriere persönliche IntelliJ-Einstellungen
+# Ignoriere persönliche intelliJ-einstellungen
 .idea/workspace.xml
 .idea/usage.statistics.xml
 .DS_Store
