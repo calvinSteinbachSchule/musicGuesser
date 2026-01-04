@@ -69,7 +69,7 @@ Ziel: Eine funktionierende grafische Oberfläche mit Audio-Support.
 
 [ ] Testen von Play/Stop Funktionalität mit einer statischen URL.
 
-🧩 Meilenstein 4: Integration & Spiellogik (Controller)
+🧩 Meilenstein 4: Integration & Spiellogik (StartController)
 
 Ziel: Verbindung von Backend und Frontend zu einem spielbaren Spiel.
 

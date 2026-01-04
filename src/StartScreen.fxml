@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane fx:controller="StartController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="710.0" prefWidth="830.0" stylesheets="@styleStartScreen.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button id="buttonEnd" layoutX="296.0" layoutY="539.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="239.0" text="BEENDEN" />
+      <Button id="buttonStart" layoutX="296.0" layoutY="473.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="239.0" text="SPIEL STARTEN" onAction="#startButtonClicked"/>
+      <ImageView fitHeight="303.0" fitWidth="363.0" layoutX="234.0" layoutY="91.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="313.0" layoutY="671.0" text="by Calvin Steinbach &amp; Iven Stump" />
+   </children>
+</Pane>
