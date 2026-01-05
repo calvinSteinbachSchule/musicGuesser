@@ -2,6 +2,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import javafx.scene.image.Image;
 import javafx.scene.Parent;
 
 public class Main extends Application
@@ -14,6 +15,9 @@ public class Main extends Application
         StartController startController = loader.getController();
         startController.setStage(stage);
 
+        Image appIcon = new Image(getClass().getResource("/logo.png").toString());
+
+        stage.getIcons().add(appIcon);
         stage.setTitle("MusicGuesser");
         stage.setScene(new Scene(rootStartScreen));
         stage.show();
