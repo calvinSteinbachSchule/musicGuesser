@@ -4,16 +4,6 @@
     -fx-font-family: "Montserrat";
 }
 
-#headingStartScreen
-{
-    -fx-font-size: 64px;
-    -fx-text-fill: #FFFFFF;
-    -fx-letter-spacing: -2.5px;
-    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 10, 0, 0, 5);
-    -fx-padding: 0 0 50 0;
-    -fx-alignment: center;
-}
-
 .button
 {
     -fx-font-weight: bold;
