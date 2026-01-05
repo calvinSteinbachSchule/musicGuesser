@@ -1,11 +1,14 @@
-# Ignoriere plattformspezifische dateien und kompillierte dateien
-*.so
-*.dll
-*.dylib
-javafx.web.jar
+# Ignoriere plattformspezifische Dateien und kompilierte Dateien
+target/
 out/
 
-# Ignoriere persönliche intelliJ-einstellungen
+# Ignoriere persönliche IntelliJ-Einstellungen
 .idea/workspace.xml
 .idea/usage.statistics.xml
+.idea/libraries/
+*.iws
+*.iml
+
+# Systemdateien
 .DS_Store
+Thumbs.db
