@@ -25,7 +25,7 @@ public class StartController
 
         try
         {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/GameScreen.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/MenuScreen.fxml"));
             Parent rootGameScreen = loader.load();
             stage.setScene(new Scene(rootGameScreen));
         }
