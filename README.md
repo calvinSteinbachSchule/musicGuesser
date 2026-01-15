@@ -3,15 +3,11 @@ JavaFX Musik-Ratespiel mit der Deezer API
 
 🗺️ Roadmap: Deezer Musik Quiz
 
-Dies ist der Entwicklungsplan für unser Java-basiertes Musik-Ratespiel. Das Projekt wird in mehreren Phasen entwickelt, wobei der Fokus auf einer sauberen Trennung von Backend (API-Logik) und Frontend (JavaFX) liegt.
-
 🚀 Projektstatus
 
-Aktuelle Phase: Initialisierung & Setup
+Aktuelle Phase: GUI - Design
 
 📅 Meilenstein 1: Projekt-Initialisierung & Setup
-
-Ziel: Eine stabile Entwicklungsumgebung ohne Build-Tools (Maven/Gradle) schaffen.
 
 [X] Repository Setup
 
@@ -19,15 +15,10 @@ Ziel: Eine stabile Entwicklungsumgebung ohne Build-Tools (Maven/Gradle) schaffen
 
 [X] Initialer Commit und Push auf GitHub.
 
-[X] Abhängigkeiten (Dependencies) einrichten
-
-[X] JavaFX SDK herunterladen und lokal einbinden.
-
-[X] Jackson Core/Annotations/Databind JARs herunterladen und einbinden.
-
-[X] Run-Configuration (VM Options) für JavaFX Module in IntelliJ konfigurieren.
-
 [X] Einfaches "Hello World" JavaFX-Fenster starten, um Setup zu bestätigen.
+
+[X] Maven Projekt erstellt -> Spart manuellen download von platformspezifischen .jars für jackson und javaFX
+
 
 ⚙️ Meilenstein 2: Backend & Datenlogik (Model)
 
@@ -36,8 +27,6 @@ Ziel: Erfolgreicher Abruf und Verarbeitung von Daten der Deezer API.
 [ ] Datenmodellierung
 
 [ ] Analyse der JSON-Response von api.deezer.com.
-
-[ ] Erstellung der Java POJOs (Track, Artist, DeezerResponse) mit passenden Jackson-Annotationen.
 
 [ ] API Service
 
@@ -51,45 +40,23 @@ Ziel: Erfolgreicher Abruf und Verarbeitung von Daten der Deezer API.
 
 [ ] Konsolen-Test: Erfolgreiche Ausgabe von Songtiteln und Preview-URLs nach Künstlersuche.
 
+[ ] Dateihandler für Highscore Liste (IO, NIO)
+ 
 🖥️ Meilenstein 3: Benutzeroberfläche (View)
 
 Ziel: Eine funktionierende grafische Oberfläche mit Audio-Support.
 
-[ ] Layout Erstellung
+[x] startScreen layout erstellt
 
-[ ] Grundgerüst mit VBox oder BorderPane.
+[ ] menuScreen layout erstellt
 
-[ ] Suchleiste für Künstlernamen.
+[ ] menuScreen Retro Highscore Liste erstellt
 
-[ ] Grid-Layout für die 4 Antwort-Buttons.
+[ ] gameScreen layout erstellt
 
-[ ] Audio-Integration
-
-[ ] Implementierung der MediaPlayer Klasse (JavaFX Media).
-
-[ ] Testen von Play/Stop Funktionalität mit einer statischen URL.
-
-🧩 Meilenstein 4: Integration & Spiellogik (StartController)
-
-Ziel: Verbindung von Backend und Frontend zu einem spielbaren Spiel.
+🧩 Meilenstein 4: Integration & Spiellogik 
 
 [ ] Game Loop
-
-[ ] Logik zum Starten einer Runde (Laden der Songs -> Auswahl von 4 Zufallstracks).
-
-[ ] Zuweisung eines "richtigen" Songs und Abspielen der Preview.
-
-[ ] Interaktion
-
-[ ] Event-Handling für Button-Klicks.
-
-[ ] Gewinnprüfung (User-Auswahl vs. richtiger Song).
-
-[ ] Visuelles Feedback (Grün/Rot Färbung der Buttons).
-
-[ ] Score System
-
-[ ] Punktezähler implementieren.
 
 ✨ Meilenstein 5: Polish & Release (Optional)
 
@@ -98,12 +65,6 @@ Ziel: Verbesserung der UX und Fehlerbehandlung.
 [ ] Fehlerbehandlung
 
 [ ] User-Feedback bei fehlender Internetverbindung oder leeren Suchergebnissen.
-
-[ ] Styling
-
-[ ] CSS-Styling für Buttons und Hintergründe (Modern UI).
-
-[ ] Anzeigen von Album-Covern.
 
 [ ] Finalisierung
 
