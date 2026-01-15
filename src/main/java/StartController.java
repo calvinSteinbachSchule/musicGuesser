@@ -26,8 +26,8 @@ public class StartController
         try
         {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/MenuScreen.fxml"));
-            Parent rootGameScreen = loader.load();
-            stage.setScene(new Scene(rootGameScreen));
+            Parent rootMenuScreen = loader.load();
+            stage.setScene(new Scene(rootMenuScreen));
         }
         catch(IOException e)
         {
