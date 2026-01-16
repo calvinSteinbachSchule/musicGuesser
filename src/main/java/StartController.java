@@ -21,12 +21,15 @@ public class StartController
     @FXML
     public void startButtonClicked()
     {
-        mediaPlayer.stop();
-
         try
         {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/MenuScreen.fxml"));
             Parent rootMenuScreen = loader.load();
+
+            MenuController menuController = loader.getController();
+            menuController.setStage(this.stage);
+            menuController.setMediaPlayer(this.mediaPlayer);
+
             stage.setScene(new Scene(rootMenuScreen));
         }
         catch(IOException e)
