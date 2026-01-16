@@ -26,13 +26,14 @@
     -fx-background-radius: 25;
 }
 
-/*.textBoxKuenstler:focused
+.textBoxKuenstler:focused
 {
     -fx-boarder-color: #1DB954;
     -fx-background-color: #1E1E1E;
     -fx-boarder-width: 2px;
     -fx-background-radius: 25;
-*/
+}
+
 .labelHighscore
 {
     -fx-text-fill: #FFFFFF;
