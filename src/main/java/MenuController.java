@@ -3,10 +3,10 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.media.AudioClip;
-import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.stage.Stage;
 
+import java.awt.*;
 import java.io.IOException;
 
 public class MenuController
@@ -14,6 +14,11 @@ public class MenuController
     private Stage stage;
     private MediaPlayer mediaPlayer;
     private AudioClip clickSound;
+
+    public MenuController()
+    {
+
+    }
 
     @FXML
     public void startButtonClicked()

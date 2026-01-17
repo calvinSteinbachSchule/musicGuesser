@@ -1,0 +1,56 @@
+.root
+{
+    -fx-background-color: #121212;
+    -fx-font-family: "Montserrat";
+}
+
+.button
+{
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+    -fx-background-radius: 100;
+    -fx-cursor: hand;
+    -fx-padding: 14 45 14 45;
+    -fx-background-insets: 0;
+}
+
+.label
+{
+    -fx-font-size: 20px;
+    -fx-text-fill: #FFFFFF;
+    -fx-alignment: center;
+}
+.textBoxName
+{
+    -fx-background-color: #1E1E1E;
+    -fx-background-radius: 25;
+}
+
+.textBoxName:focused
+{
+    -fx-boarder-color: #1DB954;
+    -fx-background-color: #1E1E1E;
+    -fx-boarder-width: 2px;
+    -fx-background-radius: 25;
+}
+
+.buttonGameover
+{
+    -fx-background-color: transparent;
+    -fx-border-color: #ffffff;
+    -fx-border-width: 1px;
+    -fx-border-radius: 100;
+    -fx-text-fill: #ffffff;
+}
+
+.buttonGameover:hover
+{
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+    -fx-border-color: #ffffff;
+}
+
+.labelGameover
+{
+    -fx-font-size: 50px;
+    -fx-text-fill: red;
+}

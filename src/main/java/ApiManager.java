@@ -6,13 +6,13 @@ import java.net.http.HttpResponse;
 public class ApiManager
 {
 
-    public String sucheSongs(String suchBegtiff)  //wird später aufgerufen um API nach suchbegriff zu durchstöbern
+    public String sucheSongs(String suchBegriff)  //wird später aufgerufen um API nach suchbegriff zu durchstöbern
     {
         //Basis-URL von Deezer für die Suche
         String basisUrl = "https://api.deezer.com/search?q=";
 
         //fertige URL: Basis + Suchbegriff
-        String url = basisUrl + suchBegtiff.replace(" ", "%20"); //tauscht leer stellen mit %20 damit URL das leerzeichen erkennt
+        String url = basisUrl + suchBegriff.replace(" ", "%20"); //tauscht leer stellen mit %20 damit URL das leerzeichen erkennt
 
         //gibt fertige url an Funktion getUrl
         return anfrageSenden(url);
