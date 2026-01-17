@@ -48,11 +48,11 @@ Ziel: Eine funktionierende grafische Oberfläche mit Audio-Support.
 
 [x] startScreen layout erstellt
 
-[ ] menuScreen layout erstellt
+[x] menuScreen layout erstellt
 
-[ ] menuScreen Retro Highscore Liste erstellt
+[x] menuScreen Retro Highscore Liste erstellt
 
-[ ] gameScreen layout erstellt
+[x] gameScreen layout erstellt
 
 🧩 Meilenstein 4: Integration & Spiellogik 
 
