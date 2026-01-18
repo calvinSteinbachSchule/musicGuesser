@@ -2,6 +2,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.TextField;
 import javafx.scene.media.AudioClip;
 import javafx.scene.media.MediaPlayer;
 import javafx.stage.Stage;
@@ -15,6 +16,9 @@ public class MenuController
     private MediaPlayer mediaPlayer;
     private AudioClip clickSound;
 
+    @FXML
+    private TextField suchEingabe;
+
     public MenuController()
     {
 
@@ -23,6 +27,8 @@ public class MenuController
     @FXML
     public void startButtonClicked()
     {
+        
+
         mediaPlayer.stop();
 
         try

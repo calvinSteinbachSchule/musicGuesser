@@ -18,6 +18,16 @@ public class Song
         this.preview = preview;
     }
 
+    public void setArtist(Artist artist)
+    {
+        this.artist = artist;
+    }
+
+    public void setAlbum(Album album)
+    {
+        this.album = album;
+    }
+
     public String getPreview()
     {
         return preview;
