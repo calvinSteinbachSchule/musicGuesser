@@ -8,30 +8,30 @@
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="710.0" prefWidth="830.0" stylesheets="@styleGameScreen.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GameController">
    <children>
-      <Button fx:id="buttonPlayId" onAction="#playButtonClicked" alignment="CENTER" layoutX="355.0" layoutY="321.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="153.0" styleClass="buttonPlay" text="Play" textAlignment="CENTER" />
-      <Button fx:id="buttonAnswerAid" onAction="#answerAClicked" layoutX="50.0" layoutY="469.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="346.0" styleClass="buttonAnswer" text="A" />
-      <Button fx:id="buttonAnswerBid" onAction="#answerBClicked" layoutX="443.0" layoutY="469.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="346.0" styleClass="buttonAnswer" text="B" />
-      <Button fx:id="buttonAnswerCid" onAction="#answerCClicked" layoutX="50.0" layoutY="561.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="346.0" styleClass="buttonAnswer" text="C" />
-      <Button fx:id="buttonAnswerDid" onAction="#answerDClicked" layoutX="443.0" layoutY="561.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="346.0" styleClass="buttonAnswer" text="D" />
-      <Label layoutX="358.0" layoutY="199.0" prefHeight="30.0" prefWidth="69.0" text="Artist:" textAlignment="CENTER" />
-      <ImageView fitHeight="90.0" fitWidth="75.0" layoutX="47.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+      <Button fx:id="buttonPlayId" alignment="CENTER" layoutX="402.0" layoutY="339.0" mnemonicParsing="false" onAction="#playButtonClicked" prefHeight="51.0" prefWidth="153.0" styleClass="buttonPlay" text="Play" textAlignment="CENTER" />
+      <Button fx:id="buttonAnswerAid" layoutX="50.0" layoutY="469.0" mnemonicParsing="false" onAction="#answerAClicked" prefHeight="50.0" prefWidth="346.0" styleClass="buttonAnswer" text="A" />
+      <Button fx:id="buttonAnswerBid" layoutX="443.0" layoutY="469.0" mnemonicParsing="false" onAction="#answerBClicked" prefHeight="50.0" prefWidth="346.0" styleClass="buttonAnswer" text="B" />
+      <Button fx:id="buttonAnswerCid" layoutX="50.0" layoutY="589.0" mnemonicParsing="false" onAction="#answerCClicked" prefHeight="50.0" prefWidth="346.0" styleClass="buttonAnswer" text="C" />
+      <Button fx:id="buttonAnswerDid" layoutX="443.0" layoutY="589.0" mnemonicParsing="false" onAction="#answerDClicked" prefHeight="50.0" prefWidth="346.0" styleClass="buttonAnswer" text="D" />
+      <Label fx:id="labelArtistId" layoutX="409.0" layoutY="199.0" prefHeight="30.0" prefWidth="69.0" text="Artist:" textAlignment="CENTER" />
+      <ImageView fitHeight="90.0" fitWidth="75.0" layoutX="13.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@logo.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="albumCoverImageView" fitHeight="250.0" fitWidth="255.0" layoutX="74.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true" styleClass="albumCover">
+      <ImageView fx:id="albumCoverImageView" fitHeight="250.0" fitWidth="255.0" layoutX="98.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true" styleClass="albumCover">
          <image>
             <Image url="@coverPlaceholder.jpg" />
          </image>
       </ImageView>
-      <Label layoutX="362.0" layoutY="250.0" prefHeight="30.0" prefWidth="69.0" text="Album:" textAlignment="CENTER" />
+      <Label layoutX="409.0" layoutY="250.0" prefHeight="30.0" prefWidth="69.0" text="Album:" textAlignment="CENTER" />
       <Label layoutX="50.0" layoutY="652.0" prefHeight="17.0" prefWidth="69.0" />
-      <Label layoutX="358.0" layoutY="147.0" prefHeight="30.0" prefWidth="69.0" text="Track:" textAlignment="CENTER" />
-      <Label layoutX="563.0" layoutY="147.0" prefHeight="30.0" prefWidth="134.0" text="???" />
-      <Label layoutX="483.0" layoutY="27.0" prefHeight="30.0" prefWidth="92.0" text="Punktzahl:" />
-      <Label fx:id="labelScoreId" layoutX="678.0" layoutY="27.0" text="0" />
-      <Label fx:id="labelArtistId" layoutX="447.0" layoutY="199.0" prefHeight="30.0" prefWidth="366.0" text="???" />
-      <Label fx:id="labelAlbumId" layoutX="447.0" layoutY="250.0" prefHeight="30.0" prefWidth="366.0" text="???" />
-      <Button fx:id="buttonStopId" onAction="#stopButtonClicked" alignment="CENTER" layoutX="539.0" layoutY="321.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="153.0" styleClass="buttonPlay" text="Stop" textAlignment="CENTER" />
+      <Label layoutX="409.0" layoutY="147.0" prefHeight="30.0" prefWidth="69.0" text="Track:" textAlignment="CENTER" />
+      <Label fx:id="labelTrackId" layoutX="530.0" layoutY="147.0" prefHeight="30.0" prefWidth="281.0" text="labelTrackId" />
+      <Label layoutX="409.0" layoutY="27.0" prefHeight="30.0" prefWidth="92.0" text="Punktzahl:" />
+      <Label fx:id="labelScoreId" layoutX="666.0" layoutY="28.0" text="0" />
+      <Label fx:id="labelArtistId" layoutX="530.0" layoutY="199.0" prefHeight="30.0" prefWidth="281.0" text="labelArtistId" />
+      <Label fx:id="labelAlbumId" layoutX="530.0" layoutY="250.0" prefHeight="30.0" prefWidth="281.0" text="???" />
+      <Button fx:id="buttonStopId" alignment="CENTER" layoutX="594.0" layoutY="339.0" mnemonicParsing="false" onAction="#stopButtonClicked" prefHeight="51.0" prefWidth="153.0" styleClass="buttonPlay" text="Stop" textAlignment="CENTER" />
    </children>
 </Pane>

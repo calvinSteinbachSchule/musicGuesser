@@ -28,7 +28,7 @@ public class GameController
     @FXML
     private Button buttonAnswerAid, buttonAnswerBid, buttonAnswerCid, buttonAnswerDid;
     @FXML
-    private Label labelScoreId, labelArtistId, labelAlbumId;
+    private Label labelScoreId, labelArtistId, labelAlbumId, labelTrackId;
     @FXML
     private ImageView albumCoverImageView;
 
@@ -75,13 +75,13 @@ public class GameController
     {
         if(allSongs == null || allSongs.isEmpty())
         {
-            labelArtistId.setText("Fehler: Keine Songs verfügbar!");
+            labelTrackId.setText("Fehler: Keine Songs verfügbar!");
             return;
         }
 
         if(availableSongs.isEmpty())
         {
-            labelArtistId.setText("Alle Songs gespielt! Starte von vorne...");
+            labelTrackId.setText("Alle Songs gespielt! Starte von vorne...");
             availableSongs = new ArrayList<>(allSongs);
             playedSongs.clear();
 
@@ -149,7 +149,7 @@ public class GameController
     {
         if(correctSong == null || correctSong.getPreview() == null)
         {
-            labelArtistId.setText("Kein Preview verfügbar - nächster Song...");
+            labelTrackId.setText("Keine Preview verfügbar! Nächster Song...");
 
             PauseTransition skipDelay = new PauseTransition(Duration.seconds(2));
             skipDelay.setOnFinished(e -> startNewRound());
@@ -169,11 +169,11 @@ public class GameController
             songPlayer.setVolume(0.7);
             songPlayer.play();
 
-            labelArtistId.setText("♪ Song wird abgespielt...");
+            labelTrackId.setText("♪ Song wird abgespielt...");
         }
         catch(Exception e)
         {
-            labelArtistId.setText("Fehler beim Abspielen!");
+            labelTrackId.setText("Fehler beim Abspielen!");
             e.printStackTrace();
         }
     }
@@ -191,7 +191,7 @@ public class GameController
         if(songPlayer != null)
         {
             songPlayer.stop();
-            labelArtistId.setText("??? (gestoppt)");
+            labelTrackId.setText("(gestoppt)");
         }
     }
 
