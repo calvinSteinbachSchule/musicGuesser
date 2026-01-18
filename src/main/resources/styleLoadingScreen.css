@@ -1,0 +1,47 @@
+/* Music Guesser - Loading Screen Design */
+
+.root
+{
+    -fx-background-color: #121212;
+    -fx-font-family: "Montserrat", "Segoe UI", "Arial", sans-serif;
+}
+
+.labelTitle
+{
+    -fx-font-size: 38px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1DB954;
+    -fx-alignment: center;
+    -fx-effect: dropshadow(gaussian, rgba(29, 185, 84, 0.4), 15, 0, 0, 3);
+}
+
+.labelStatus
+{
+    -fx-font-size: 16px;
+    -fx-text-fill: #b3b3b3;
+    -fx-alignment: center;
+    -fx-font-weight: 500;
+}
+
+.progressBar
+{
+    -fx-accent: #1DB954;
+}
+
+.progressBar > .track
+{
+    -fx-background-color: #282828;
+    -fx-background-radius: 20;
+    -fx-border-color: #1a1a1a;
+    -fx-border-width: 1px;
+    -fx-border-radius: 20;
+}
+
+.progressBar > .bar
+{
+    -fx-background-color: linear-gradient(to right, #1DB954, #1ed760);
+    -fx-background-radius: 20;
+    -fx-background-insets: 0;
+    -fx-padding: 0.6em;
+    -fx-effect: dropshadow(gaussian, rgba(29, 185, 84, 0.4), 10, 0, 0, 0);
+}
