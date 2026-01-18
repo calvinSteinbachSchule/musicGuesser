@@ -1,7 +1,9 @@
+/* Music Guesser - Menu Screen Design */
+
 .root
 {
     -fx-background-color: #121212;
-    -fx-font-family: "Montserrat";
+    -fx-font-family: "Montserrat", "Segoe UI", "Arial", sans-serif;
 }
 
 .button
@@ -16,55 +18,138 @@
 
 .labelAuswahlKuenstler
 {
-    -fx-font-size: 15px;
+    -fx-font-size: 16px;
+    -fx-font-weight: 600;
     -fx-text-fill: #FFFFFF;
     -fx-alignment: center;
 }
+
 .textBoxKuenstler
 {
-    -fx-background-color: #1E1E1E;
+    -fx-background-color: #282828;
     -fx-background-radius: 25;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 14px;
+    -fx-padding: 12 20 12 20;
+    -fx-prompt-text-fill: #b3b3b3;
+    -fx-border-color: transparent;
+    -fx-border-width: 2px;
+    -fx-border-radius: 25;
 }
 
 .textBoxKuenstler:focused
 {
-    -fx-boarder-color: #1DB954;
-    -fx-background-color: #1E1E1E;
-    -fx-boarder-width: 2px;
-    -fx-background-radius: 25;
+    -fx-background-color: #333333;
+    -fx-border-color: #1DB954;
+    -fx-border-width: 2px;
+    -fx-border-radius: 25;
+    -fx-effect: dropshadow(gaussian, rgba(29, 185, 84, 0.3), 15, 0, 0, 0);
+}
+
+.textBoxKuenstler:hover
+{
+    -fx-background-color: #2a2a2a;
 }
 
 .labelHighscore
 {
     -fx-text-fill: #FFFFFF;
     -fx-alignment: center;
-    -fx-font-size: 20px;
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 8, 0, 0, 2);
 }
+
 .highscoreList
 {
     -fx-background-color: #1E1E1E;
-    -fx-background-radius: 25;
+    -fx-background-radius: 15;
+    -fx-border-color: #282828;
+    -fx-border-width: 1px;
+    -fx-border-radius: 15;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 15, 0, 0, 5);
+}
+
+.highscoreList .list-cell
+{
+    -fx-background-color: transparent;
+    -fx-text-fill: #b3b3b3;
+    -fx-font-size: 13px;
+    -fx-font-family: "Consolas", "Courier New", monospace;
+    -fx-padding: 8 12 8 12;
+}
+
+.highscoreList .list-cell:filled:hover
+{
+    -fx-background-color: rgba(29, 185, 84, 0.1);
+    -fx-text-fill: #FFFFFF;
+}
+
+.highscoreList .list-cell:filled:selected
+{
+    -fx-background-color: rgba(29, 185, 84, 0.2);
+    -fx-text-fill: #1DB954;
+}
+
+.highscoreList .list-cell:empty
+{
+    -fx-background-color: transparent;
+}
+
+.highscoreList:focused .list-cell:filled:selected
+{
+    -fx-background-color: rgba(29, 185, 84, 0.3);
+    -fx-text-fill: #1ed760;
+}
+
+.highscoreList .scroll-bar:vertical
+{
+    -fx-background-color: #1E1E1E;
+}
+
+.highscoreList .scroll-bar .thumb
+{
+    -fx-background-color: #282828;
+    -fx-background-radius: 10;
+}
+
+.highscoreList .scroll-bar .thumb:hover
+{
+    -fx-background-color: #333333;
+}
+
+.highscoreList .scroll-bar .track
+{
+    -fx-background-color: transparent;
 }
 
 .buttonStart
 {
     -fx-background-color: #1DB954;
     -fx-text-fill: #121212;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0, 0, 4);
 }
 
 .buttonStart:hover
 {
     -fx-background-color: #1ed760;
-    -fx-scale-x: 1.03;
-    -fx-scale-y: 1.03;
-    -fx-effect: dropshadow(gaussian, rgba(29, 185, 84, 0.4), 20, 0, 0, 0);
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-effect: dropshadow(gaussian, rgba(29, 185, 84, 0.6), 25, 0, 0, 6);
+}
+
+.buttonStart:pressed
+{
+    -fx-scale-x: 0.98;
+    -fx-scale-y: 0.98;
+    -fx-background-color: #1aa34a;
 }
 
 .buttonEnd
 {
     -fx-background-color: transparent;
-    -fx-border-color: #ffffff;
-    -fx-border-width: 1px;
+    -fx-border-color: #b3b3b3;
+    -fx-border-width: 2px;
     -fx-border-radius: 100;
     -fx-text-fill: #ffffff;
 }
@@ -73,4 +158,13 @@
 {
     -fx-background-color: rgba(255, 255, 255, 0.1);
     -fx-border-color: #ffffff;
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+}
+
+.buttonEnd:pressed
+{
+    -fx-background-color: rgba(255, 255, 255, 0.05);
+    -fx-scale-x: 0.98;
+    -fx-scale-y: 0.98;
 }
