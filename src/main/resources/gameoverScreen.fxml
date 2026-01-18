@@ -5,11 +5,25 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.Pane?>
 
-<Pane id="textBoxNameId" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="710.0" prefWidth="830.0" stylesheets="@styleGameoverScreen.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GameoverController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="710.0" prefWidth="830.0" stylesheets="@styleGameoverScreen.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GameoverController">
    <children>
-      <Button layoutX="304.0" layoutY="463.0" mnemonicParsing="false" styleClass="buttonGameover" text="Zurück zum Menü" />
-      <Label layoutX="286.0" layoutY="209.0" styleClass="labelGameover" text="GAME OVER" />
-      <Label layoutX="305.0" layoutY="325.0" prefHeight="30.0" prefWidth="220.0" text="Gib deinen Namen ein:" />
-      <TextField layoutX="304.0" layoutY="388.0" prefHeight="41.0" prefWidth="220.0" styleClass="textBoxName" />
+      <!-- GAME OVER Text - zentriert bei 830px Breite -->
+      <Label layoutX="265.0" layoutY="150.0" prefWidth="300.0" styleClass="labelGameover" text="GAME OVER" alignment="CENTER" />
+
+      <!-- Punktzahl Label - zentriert -->
+      <Label layoutX="305.0" layoutY="280.0" prefHeight="30.0" prefWidth="220.0" text="Deine Punktzahl:" styleClass="scoreLabel" alignment="CENTER" />
+
+      <!-- Score - zentriert -->
+      <Label fx:id="labelFinalScoreId" layoutX="340.0" layoutY="330.0" prefHeight="50.0" prefWidth="150.0" text="0" styleClass="finalScore" />
+
+      <!-- Name eingeben für Highscore -->
+      <Label layoutX="315.0" layoutY="400.0" prefHeight="25.0" prefWidth="200.0" text="Dein Name:" styleClass="scoreLabel" alignment="CENTER" />
+      <TextField fx:id="textFieldSpielerName" layoutX="290.0" layoutY="430.0" prefHeight="40.0" prefWidth="250.0" styleClass="textBoxSpielerName" promptText="Max Mustermann" />
+      <Button fx:id="buttonSpeichern" onAction="#speichernButtonClicked" onMouseEntered="#buttonMouseEntered" layoutX="315.0" layoutY="485.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="200.0" styleClass="buttonSpeichern" text="Speichern" />
+
+      <!-- Buttons - zentriert und gleichmäßig verteilt -->
+      <Button onAction="#neuStartenButtonClicked" onMouseEntered="#buttonMouseEntered" layoutX="215.0" layoutY="555.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="180.0" styleClass="buttonGameover" text="Neu Starten" />
+      <Button onAction="#menuButtonClicked" onMouseEntered="#buttonMouseEntered" layoutX="415.0" layoutY="555.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" styleClass="buttonGameover" text="Zurück zum Menü" />
+      <Button onAction="#beendenButtonClicked" onMouseEntered="#buttonMouseEntered" layoutX="325.0" layoutY="625.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="180.0" styleClass="buttonGameover" text="Beenden" />
    </children>
 </Pane>

@@ -75,15 +75,14 @@
 .textBoxSpielerName
 {
     -fx-background-color: #282828;
-    -fx-background-radius: 10;
+    -fx-background-radius: 25;
     -fx-text-fill: #FFFFFF;
-    -fx-font-size: 16px;
-    -fx-padding: 10 15 10 15;
+    -fx-font-size: 14px;
+    -fx-padding: 12 20 12 20;
     -fx-prompt-text-fill: #b3b3b3;
     -fx-border-color: transparent;
     -fx-border-width: 2px;
-    -fx-border-radius: 10;
-    -fx-alignment: center;
+    -fx-border-radius: 25;
 }
 
 .textBoxSpielerName:focused
@@ -91,7 +90,7 @@
     -fx-background-color: #333333;
     -fx-border-color: #1DB954;
     -fx-border-width: 2px;
-    -fx-border-radius: 10;
+    -fx-border-radius: 25;
     -fx-effect: dropshadow(gaussian, rgba(29, 185, 84, 0.3), 15, 0, 0, 0);
 }
 
