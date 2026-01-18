@@ -13,6 +13,7 @@ public class Main extends Application
     @Override
     public void start(Stage stage) throws Exception
     {
+        // Singleton-Instanz holen (lädt automatisch die Highscores)
         highscoreService = HighscoreService.getInstance();
 
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/StartScreen.fxml"));
@@ -49,5 +50,4 @@ public class Main extends Application
     {
         launch(args);
     }
-
 }

@@ -12,12 +12,10 @@ import java.io.IOException;
 
 public class StartController
 {
-    //Der Frame in dem die Szenen angezeigt werden
     private Stage stage;
     private MediaPlayer mediaPlayer;
     private AudioClip clickSound;
 
-    //Wechsel von StartScreen in GameScreen
     @FXML
     public void startButtonClicked()
     {
