@@ -8,18 +8,18 @@
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="710.0" prefWidth="830.0" stylesheets="@styleGameScreen.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GameController">
    <children>
-      <Button id="buttonPlayId" alignment="CENTER" layoutX="355.0" layoutY="321.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="153.0" styleClass="buttonPlay" text="Play" textAlignment="CENTER" />
-      <Button id="buttonAnswerAid" layoutX="50.0" layoutY="469.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="346.0" styleClass="buttonAnswer" text="A" />
-      <Button id="buttonAnswerBid" layoutX="443.0" layoutY="469.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="346.0" styleClass="buttonAnswer" text="B" />
-      <Button id="buttonAnswerCid" layoutX="50.0" layoutY="561.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="346.0" styleClass="buttonAnswer" text="C" />
-      <Button id="buttonAnswerDid" layoutX="443.0" layoutY="561.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="346.0" styleClass="buttonAnswer" text="D" />
+      <Button fx:id="buttonPlayId" onAction="#playButtonClicked" alignment="CENTER" layoutX="355.0" layoutY="321.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="153.0" styleClass="buttonPlay" text="Play" textAlignment="CENTER" />
+      <Button fx:id="buttonAnswerAid" onAction="#answerAClicked" layoutX="50.0" layoutY="469.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="346.0" styleClass="buttonAnswer" text="A" />
+      <Button fx:id="buttonAnswerBid" onAction="#answerBClicked" layoutX="443.0" layoutY="469.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="346.0" styleClass="buttonAnswer" text="B" />
+      <Button fx:id="buttonAnswerCid" onAction="#answerCClicked" layoutX="50.0" layoutY="561.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="346.0" styleClass="buttonAnswer" text="C" />
+      <Button fx:id="buttonAnswerDid" onAction="#answerDClicked" layoutX="443.0" layoutY="561.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="346.0" styleClass="buttonAnswer" text="D" />
       <Label layoutX="358.0" layoutY="199.0" prefHeight="30.0" prefWidth="69.0" text="Artist:" textAlignment="CENTER" />
       <ImageView fitHeight="90.0" fitWidth="75.0" layoutX="47.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@logo.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="250.0" fitWidth="255.0" layoutX="74.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true" styleClass="albumCover">
+      <ImageView fx:id="albumCoverImageView" fitHeight="250.0" fitWidth="255.0" layoutX="74.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true" styleClass="albumCover">
          <image>
             <Image url="@coverPlaceholder.jpg" />
          </image>
@@ -29,9 +29,9 @@
       <Label layoutX="358.0" layoutY="147.0" prefHeight="30.0" prefWidth="69.0" text="Track:" textAlignment="CENTER" />
       <Label layoutX="563.0" layoutY="147.0" prefHeight="30.0" prefWidth="134.0" text="???" />
       <Label layoutX="483.0" layoutY="27.0" prefHeight="30.0" prefWidth="92.0" text="Punktzahl:" />
-      <Label id="labelScoreId" layoutX="678.0" layoutY="27.0" text="0" />
-      <Label id="labelArtistId" layoutX="447.0" layoutY="199.0" prefHeight="30.0" prefWidth="366.0" text="..." />
-      <Label id="labelAlbumId" layoutX="447.0" layoutY="250.0" prefHeight="30.0" prefWidth="366.0" text="..." />
-      <Button id="buttonStopId" alignment="CENTER" layoutX="539.0" layoutY="321.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="153.0" styleClass="buttonPlay" text="Stop" textAlignment="CENTER" />
+      <Label fx:id="labelScoreId" layoutX="678.0" layoutY="27.0" text="0" />
+      <Label fx:id="labelArtistId" layoutX="447.0" layoutY="199.0" prefHeight="30.0" prefWidth="366.0" text="???" />
+      <Label fx:id="labelAlbumId" layoutX="447.0" layoutY="250.0" prefHeight="30.0" prefWidth="366.0" text="???" />
+      <Button fx:id="buttonStopId" onAction="#stopButtonClicked" alignment="CENTER" layoutX="539.0" layoutY="321.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="153.0" styleClass="buttonPlay" text="Stop" textAlignment="CENTER" />
    </children>
 </Pane>
